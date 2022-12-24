@@ -1,0 +1,46 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 75px;
+  background: #fff;
+}
+
+.navbar {
+  width: calc(100% / 7);
+  line-height: 75px;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: 0;
+  color: black;
+  transition: 0.4s;
+  border-radius: 2px;
+}
+
+.navbar:hover {
+  color: red;
+  font-size: 33px;
+}
+
+@media (max-width: 1290px) {
+  .navbar:hover {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1169px) {
+  .navbar:not(:first-of-type, :last-of-type) {
+    display: none;
+  }
+
+  .navbar {
+    font-size: 25px;
+    width: 75px;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+}

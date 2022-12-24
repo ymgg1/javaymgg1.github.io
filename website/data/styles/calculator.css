@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Tahoma;
+}
+
+body {
+  background-color: rgb(252, 217, 217);
+}
+
+.resetc {
+  border: 0;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid rgb(223, 223, 223);
+}
+
+.resetc:hover {
+  background: rgb(182, 182, 182);
+  border: 1px solid rgb(182, 182, 182);
+}
+
+.calculator {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  width: fit-content;
+  margin: 35vh auto;
+}
+
+input,
+select {
+  border: 0;
+  outline: none;
+}
+
+select,
+.button {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  background: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+input {
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  color: #000;
+}
+
+select:hover,
+select:focus,
+.button:hover {
+  background: lightgray;
+}
+
+@media (max-width: 1400px) {
+  .calculator {
+    flex-direction: column;
+    margin: 5vh auto;
+    width: 90%;
+  }
+
+  input,
+  select,
+  .button {
+    height: 150px;
+    line-height: 150px;
+    border: 0;
+  }
+
+  select,
+  .button {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+}
+
+@media (min-width: 1400px) {
+  input,
+  select,
+  .button {
+    height: 120px;
+    line-height: 120px;
+  }
+
+  input {
+    width: 340px;
+  }
+
+  select,
+  .button {
+    width: 120px;
+  }
+}
+
+.activet {
+  color: red;
+  font-size: 33px;
+}
+
+@media (max-width: 1290px) {
+  .activet {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .calculator {
+    width: 100%;
+    margin: 0;
+  }
+
+  input:first-of-type {
+    border-top: 1px solid lightgray;
+  }
+}

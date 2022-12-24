@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(252, 217, 217);
+}
+
+.coin {
+  margin: auto;
+  width: 400px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgb(233, 225, 0);
+  border: 3px solid rgb(209, 202, 0);
+  font-size: 100px;
+  text-align: center;
+  line-height: 400px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s;
+}
+
+.coin:hover {
+  background: rgb(255, 247, 0);
+  transform: scale(1.01);
+}
+
+.coin:active {
+  background: rgb(209, 202, 0);
+  transform: scale(1);
+}
+
+.count {
+  font-size: 50px;
+  margin: 5px;
+}
+
+#hPercent,
+#tPercent,
+#rPercent {
+  margin-left: 50px;
+}
+
+.activee {
+  color: red;
+  font-size: 33px;
+}
+
+#history {
+  font-size: 50px;
+  width: 400px;
+  text-align: center;
+  outline: none;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.step {
+  margin: 5px;
+  width: 400px;
+  background: #fff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  outline: 0;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+}
+
+@media (max-width: 1290px) {
+  .activee {
+    font-size: 30px;
+  }
+
+  .coin {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+  }
+}

@@ -1,0 +1,3 @@
+const navbar = document.querySelector(".nav");
+navbar.innerHTML =
+  '<a class="navbar" href="main.html">Меню</a><a class="navbar activeo" href="clicker.html">Клікер</a><a class="navbar activet" href="calculator.html">Калькулятор</a><a class="navbar activetr" href="yearguesser.html">Вік</a><a class="navbar activef" href="states.html">Країни</a><a class="navbar  activefv" href="progress.html">Прогрес</a><a class="navbar actives" href="slider.html">Слайдер</a><a class="navbar  activesv" href="radius.html">Радіус</a><a class="navbar activee" href="headtails.html">ОрелРешка</a><a class="navbar" href="D:/website/login.html">Вийти</a>';

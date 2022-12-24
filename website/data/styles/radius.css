@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+body {
+  background-color: rgb(252, 217, 217);
+}
+
+.calc {
+  margin: 100px auto;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  background: black;
+  color: white;
+  font-family: arial;
+  padding: 18px;
+  box-shadow: 4px 4px 4px grey;
+}
+
+.title {
+  height: 10px;
+  padding: 10px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgb(49, 49, 49);
+  border-radius: 20px;
+}
+
+.title p {
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  user-select: none;
+  line-height: 10px;
+}
+
+.screen {
+  height: 80px;
+  padding: 10px;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  margin-bottom: 20px;
+  border: grey 1px solid;
+  border-radius: 10px;
+  background: rgb(20, 20, 20);
+  font-size: 60px;
+  text-align: end;
+  user-select: none;
+  line-height: 10px;
+  overflow: hidden;
+}
+
+.btn {
+  width: 80px;
+  height: 60px;
+  background: grey;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "equal equal ac"
+    "seven eight nine"
+    "four five six"
+    "one two three"
+    "zero zero by";
+  grid-gap: 7px;
+  justify-items: center;
+  align-items: center;
+}
+
+.btn.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 34px;
+}
+
+.btn.equal {
+  grid-area: equal;
+  width: 100%;
+  border-radius: 34px;
+}
+
+.btn:hover {
+  filter: brightness(120%);
+}
+
+.btn:active {
+  filter: brightness(80%);
+  transform: scale(0.99);
+}
+
+.btn.bg_orange {
+  background: orange;
+}
+
+.btn.creator {
+  color: white;
+}
+
+.activesv {
+  color: red;
+  font-size: 33px;
+}
+
+@media (max-width: 1290px) {
+  .activesv {
+    font-size: 30px;
+  }
+}

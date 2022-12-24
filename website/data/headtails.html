@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Орел та решка</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/headtails.css" />
+  </head>
+  <body>
+    <div class="nav"></div>
+    <select id="history">
+      <option disabled selected hidden>Історія</option>
+    </select>
+    <div class="step">
+      <label for="step">Кількість кидків:</label>
+      <input type="number" id="step" min="1" max="500" />
+    </div>
+    <div class="count">
+      Орлів:<span id="headsCount"></span><span id="hPercent"></span>%
+    </div>
+    <div class="count">
+      Решок:<span id="tailsCount"></span><span id="tPercent"></span>%
+    </div>
+    <div class="count">
+      Ребро:<span id="rimCount"></span><span id="rPercent"></span>%
+    </div>
+    <div class="coin">клік</div>
+  </body>
+
+  <script src="scripts/headtails.js"></script>
+  <script src="scripts/nav.js"></script>
+</html>

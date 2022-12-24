@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+body {
+  background-color: rgb(252, 217, 217);
+}
+
+.ok {
+  font-size: 50px;
+  margin-left: 35px;
+}
+
+.container {
+  text-align: center;
+}
+
+#screen {
+  font-size: 150px;
+}
+
+#clicker {
+  font-size: 40px;
+  background: rgb(232, 0, 0);
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px red;
+}
+
+#clicker:hover {
+  transform: scale(1.005);
+  filter: brightness(105%);
+}
+
+#clicker:active {
+  transform: scale(0.995);
+  filter: brightness(95%);
+}
+
+.boost {
+  font-size: 50px;
+  margin-top: 50px;
+  width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  transition: 0.4s;
+  margin-left: 35px;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+}
+
+.boost:hover {
+  transform: scale(1.2);
+  color: #fff;
+  background: red;
+}
+
+input {
+  aspect-ratio: 2/1;
+  margin-right: 5px;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  font-size: 35px;
+}
+
+.activeo {
+  color: red;
+  font-size: 33px;
+}
+
+@media (max-width: 1290px) {
+  .activeo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+  .ok,
+  .boost {
+    margin: 0;
+    font-size: 40px;
+  }
+
+  .boost:hover {
+    transform: scale(1);
+  }
+
+  #screen {
+    font-size: 100px;
+  }
+}

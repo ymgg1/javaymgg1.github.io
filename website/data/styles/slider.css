@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Tahoma;
+}
+
+body {
+  background-color: rgb(252, 217, 217);
+}
+
+img {
+  border: 1px solid black;
+  width: 550px;
+  aspect-ratio: 16/11;
+  grid-column: 1/3;
+}
+
+.con {
+  width: fit-content;
+  margin: 25vh auto;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 10%;
+  background: 0;
+  height: fit-content;
+  border: 0;
+  font-size: 50px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.254);
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.actives {
+  color: red;
+  font-size: 33px;
+}
+
+@media (max-width: 639px) {
+  img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1290px) {
+  .actives {
+    font-size: 30px;
+  }
+}

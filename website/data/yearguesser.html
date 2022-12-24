@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вік</title>
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/yearguesser.css" />
+  </head>
+  <body>
+    <div class="nav"></div>
+    <div class="container">
+      <label for="age">Введіть Ваш вік:</label>
+      <input
+        type="number"
+        id="age"
+        min="0"
+        oninput="this.value =
+      Math.abs(this.value)"
+      />
+      <button id="submit">Підтвердити</button>
+      <label>Ваш вік:</label>
+      <input type="text" disabled id="answer" />
+    </div>
+    <script src="scripts/yearguesser.js"></script>
+    <script src="scripts/nav.js"></script>
+  </body>
+</html>

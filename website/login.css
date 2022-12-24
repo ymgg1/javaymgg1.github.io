@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(38, 46, 151);
+}
+
+.box {
+  margin: 20vh auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ava {
+  width: 175px;
+  aspect-ratio: 1;
+  background: rgba(230, 230, 230, 0.5);
+  border-radius: 50%;
+}
+
+.ava img {
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: brightness(500%);
+}
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+}
+
+.rems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 465px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.centre {
+  display: flex;
+  align-items: center;
+}
+
+.rems label {
+  margin-right: 15px;
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+#rem {
+  width: 15px;
+  cursor: pointer;
+  accent-color: #ffffff;
+}
+
+.rems a {
+  font-style: italic;
+  text-decoration: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.rems a:hover {
+  text-decoration: underline;
+}
+
+input {
+  height: 65px;
+  font-size: 30px;
+  outline: 0;
+  border: 0;
+  background: rgba(240, 240, 240, 0.5);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: rgb(235, 235, 235, 0.85);
+}
+
+button {
+  width: 470px;
+  height: 70px;
+  border: 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  border-radius: 2px;
+  background: rgba(240, 240, 240, 0.5);
+  cursor: pointer;
+  color: #fff;
+}
+
+button:hover {
+  background: rgba(240, 240, 240, 0.55);
+}
+
+.boxie {
+  height: 65px;
+  aspect-ratio: 1;
+  background: rgba(240, 240, 240, 0.8);
+  display: flex;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.boxie img {
+  opacity: 0.7;
+}
+
+.inputie {
+  display: flex;
+}
+
+span {
+  color: rgb(255, 99, 99);
+  font-style: italic;
+  line-height: 30px;
+  height: 30px;
+}
+
+@media (max-width: 642px) {
+  .box,
+  button,
+  .rems {
+    width: 95%;
+  }
+
+  .box {
+    margin-top: 10%;
+  }
+}
